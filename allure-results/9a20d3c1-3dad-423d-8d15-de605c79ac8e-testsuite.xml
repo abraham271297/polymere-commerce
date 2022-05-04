@@ -1,0 +1,119 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651492905474' stop='1651492925834'>
+    <name>Check cart functionality: As a user, I can check the cart even if it is empty</name>
+    <title>Check cart functionality: As a user, I can check the cart even if it is empty</title>
+    <test-cases>
+        <test-case start='1651492905475' status='passed' stop='1651492905476'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651492905476' status='passed' stop='1651492905551'>
+            <name>Given I am on the main page</name>
+            <title>Given I am on the main page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651492905480' status='passed' stop='1651492905549'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='656660f3-133e-45e5-bcff-9e38c1061101-attachment.json' type='application/json' size='33'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1651492905551' status='passed' stop='1651492908339'>
+            <name>When I click on cart_icon</name>
+            <title>When I click on cart_icon</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651492908269' status='passed' stop='1651492908289'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='ff5c81e1-e099-419c-b856-35a0e3acc587-attachment.json' type='application/json' size='3271'/>
+                        <attachment title='Response' source='ba664dbc-3aa2-4b39-8d11-3428ff238aa3-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651492908294' status='passed' stop='1651492908338'>
+                    <name>POST /session/:sessionId/element/d27b8cf4-c150-44f1-a295-386c6a7fdcc4/click</name>
+                    <title>POST /session/:sessionId/element/d27b8cf4-c150-44f1-a295-386c6a7fdcc4/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1651492908339' status='failed' stop='1651492925833'>
+            <name>Then I should see an empty_cart_class</name>
+            <title>Then I should see an empty_cart_class</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Expect >>>..empty-cart:not([hidden]) to be existing</message>
+                <stack-trace>Error: Expect >>>..empty-cart:not([hidden]) to be existing
+                
+                Expected: "existing"
+                Received: "not existing"
+                    at World.&lt;anonymous> (C:\Users\Sr Abraham\Desktop\google-shop\test\stesp-definitions\stepts.ts:32:31)
+                    at World.executeAsync (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:331:27)
+                    at World.testFrameworkFnWrapper (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async wrapPromiseWithTimeout (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\time.ts:56:10)
+                    at async Object.run (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\user_code_runner.ts:86:16)
+                    at async Object.run (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\runtime\step_runner.ts:50:20)
+                    at async TestCaseRunner.invokeStep (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:130:12)
+                    at async TestCaseRunner.runStep (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:307:20)
+                    at async C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:210:36</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1651492925833' status='passed' stop='1651492925834'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

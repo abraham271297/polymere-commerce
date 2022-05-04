@@ -1,0 +1,123 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651497761028' stop='1651497761202'>
+    <name>Check cart functionality: As a user, I can add elements to the Cart and the cart changes</name>
+    <title>Check cart functionality: As a user, I can add elements to the Cart and the cart changes</title>
+    <test-cases>
+        <test-case start='1651497761028' status='passed' stop='1651497761030'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651497761030' status='passed' stop='1651497761104'>
+            <name>Given I am on the main page</name>
+            <title>Given I am on the main page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651497761033' status='passed' stop='1651497761102'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f70a5d53-acf8-4ee6-90bb-bf5da7116ba5-attachment.json' type='application/json' size='33'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1651497761104' status='broken' stop='1651497761199'>
+            <name>When I click on link with text Outerwear</name>
+            <title>When I click on link with text Outerwear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651497761107' status='broken' stop='1651497761199'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='292a75ce-d6fe-4b7b-a276-bee3db68ec1b-attachment.json' type='application/json' size='3292'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid element state: invalid element state: Failed to execute 'querySelector' on 'Document': '#tabContainer shop-tabs shop-tab a:contains(Outerwear)' is not a valid selector.</message>
+                <stack-trace>invalid element state: invalid element state: Failed to execute 'querySelector' on 'Document': '#tabContainer shop-tabs shop-tab a:contains(Outerwear)' is not a valid selector.
+                  (Session info: chrome=100.0.4896.127)
+                    at getErrorFromResponseBody (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriver\build\request\index.js:158:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.findElement (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriverio\build\utils\index.js:218:20)
+                    at async Browser.$ (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async World.&lt;anonymous> (C:\Users\Sr Abraham\Desktop\google-shop\test\stesp-definitions\stepts.ts:22:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1651497761199' status='undefined'>
+            <name>Then I should see an empty_cart_class</name>
+            <title>Then I should see an empty_cart_class</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651497761200' status='undefined'>
+            <name>And I should see a message &lt;message_value> in empty_cart_class</name>
+            <title>And I should see a message &lt;message_value> in empty_cart_class</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651497761200' status='passed' stop='1651497761201'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

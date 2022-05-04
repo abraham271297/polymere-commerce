@@ -1,0 +1,141 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651501660694' stop='1651501707090'>
+    <name>Check cart functionality: As a user, I can add elements to the Cart and the cart changes</name>
+    <title>Check cart functionality: As a user, I can add elements to the Cart and the cart changes</title>
+    <test-cases>
+        <test-case start='1651501660694' status='passed' stop='1651501660696'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651501660696' status='passed' stop='1651501660781'>
+            <name>Given I am on the main page</name>
+            <title>Given I am on the main page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651501660699' status='passed' stop='1651501660779'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='75a1d7dc-db14-417c-902d-aa9f4a53f903-attachment.json' type='application/json' size='33'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1651501660781' status='broken' stop='1651501707088'>
+            <name>When I click on link with text Men's Outerwear</name>
+            <title>When I click on link with text Men's Outerwear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps>
+                <step start='1651501662563' status='passed' stop='1651501662582'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='0e9948e0-6625-4ee0-9cca-34418a728006-attachment.json' type='application/json' size='3256'/>
+                        <attachment title='Response' source='5f6cc332-cc10-4bdb-9f8f-b8062b573431-attachment.json' type='application/json' size='366'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1651501707033' status='broken' stop='1651501707088'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='7d755baa-eb2a-471b-bf3d-2556d614715d-attachment.json' type='application/json' size='3263'/>
+                    </attachments>
+                    <steps>
+                        <step start='1651501707037' status='passed' stop='1651501707067'>
+                            <name>GET /session/:sessionId/element/38bf9681-f725-4688-8ca5-11fcced62aa2/rect</name>
+                            <title>GET /session/:sessionId/element/38bf9681-f725-4688-8ca5-11fcced62aa2/rect</title>
+                            <attachments>
+                                <attachment title='Response' source='52e084a7-d5af-433f-be6a-f4fb0239a393-attachment.json' type='application/json' size='60'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid element state: invalid element state: Failed to execute 'querySelector' on 'Document': '.item[[objectObject]] h2' is not a valid selector.</message>
+                <stack-trace>invalid element state: invalid element state: Failed to execute 'querySelector' on 'Document': '.item[[objectObject]] h2' is not a valid selector.
+                  (Session info: chrome=100.0.4896.127)
+                    at getErrorFromResponseBody (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriver\build\request\index.js:158:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.findElement (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriverio\build\utils\index.js:218:20)
+                    at async Browser.$ (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at async Browser.wrapCommandFn (C:\Users\Sr Abraham\Desktop\google-shop\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async World.&lt;anonymous> (C:\Users\Sr Abraham\Desktop\google-shop\test\stesp-definitions\stepts.ts:25:14)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1651501707088' status='undefined'>
+            <name>Then I should see an empty_cart_class</name>
+            <title>Then I should see an empty_cart_class</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651501707088' status='undefined'>
+            <name>And I should see a message &lt;message_value> in empty_cart_class</name>
+            <title>And I should see a message &lt;message_value> in empty_cart_class</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1651501707088' status='passed' stop='1651501707089'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
